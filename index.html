@@ -114,23 +114,29 @@
         <!-- contact section start -->
          <section id="contact">
             <h1 class="header"><span>Contact</span></h1>
-            <form action="#">
+            <form id="contact-form" action="https://formspree.io/f/mblrnadd"
+                    method="POST">
                 <div class="input-box">
                     <span>Full Name</span>
-                    <input type="text" placeholder="Enter your Full Name">
+                    <input type="name" id="name" name="name" placeholder="Enter your Full Name">
                 </div>
                 <div class="input-box">
                     <span>Email</span>
-                    <input type="text" placeholder="Enter your Email">
+                    <input type="email" id="email" name="email" placeholder="Enter your Email">
                 </div>
                 <div class="input-box">
                     <span>Message</span>
-                    <input type="text" placeholder="Enter your Message">
+                    <textarea type="text" id="message" name="message" placeholder="Enter your Message"></textarea>
                 </div>
-                <div class="btn">Submit</div>
+                <div>
+                   <button type="submit">Send Message</button>
+                </div>
+                <div class="loader"></div>
             </form>
          </section>
+           
          <!-- contact section end -->
+
 
          <!-- footer start -->
          <footer>

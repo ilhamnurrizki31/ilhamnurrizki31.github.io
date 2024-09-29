@@ -210,7 +210,7 @@ section{
 .header{
     text-align: center;
     font-size: 3em;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 .services-container{
     display: grid;
@@ -269,6 +269,13 @@ form .input-box{
     font-size: 1.5em;
 }
 form input{
+    font-size: 1em;
+    padding: 1em 5em;
+    border-radius: 0.5em;
+    border: none;
+    outline: none;
+}
+form textarea{
     font-size: 1em;
     padding: 1em 5em;
     border-radius: 0.5em;
@@ -420,4 +427,39 @@ footer{
         align-items: baseline;
     }
 
+}
+
+/* loader */
+
+#contact .loader {
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    animation: spin 2s linear infinite;
+    justify-content: center;
+
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+button{
+    padding: 0.5rem 1em;
+    color: var(--background);
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0.5rem;
+    font-size: 1.1em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: white;
+    color: var(--background);
 }
